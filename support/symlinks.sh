@@ -31,7 +31,7 @@ for key val in ${(kv)remote_dotfile_symlinks}; do
         rm $val
     fi
 
-    ln -s $HOME/SynologyDrive/Dotfiles/$key $val
+    ln -s $NAS_FOLDER/Dotfiles/$key $val
 done
 
 
