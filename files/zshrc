@@ -55,6 +55,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # --- PATH ------------------------------------
+export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH" # Necessary for PHP FPM from homebrew to be prioritized correctly
 export PATH="./vendor/bin:$PATH" # Composer vendor directory
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin" # Postgres tools

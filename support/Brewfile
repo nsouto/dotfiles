@@ -1,9 +1,9 @@
 tap "candid82/brew"
 # tap "heroku/brew"
 tap "homebrew/bundle"
-tap "homebrew/cask"
+# tap "homebrew/cask"
 tap "homebrew/cask-versions"
-tap "homebrew/core"
+# tap "homebrew/core"
 tap "homebrew/services"
 tap "shivammathur/php"
 # tap "stripe/stripe-cli"
@@ -50,6 +50,7 @@ brew "redis"
 brew "folderify"
 brew "ansible"
 brew "act"
+brew "dotenv-linter"
 
 # Casks that require passwords
 cask "zoom"
@@ -104,6 +105,7 @@ cask "postbox"
 cask "daisydisk"
 cask "tower"
 cask "kaleidoscope"
+cask "tailscale"
 
 # Mac App Store
 mas "Amphetamine", id: 937984704

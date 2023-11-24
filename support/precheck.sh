@@ -1,10 +1,27 @@
 echo 'Checking dependencies...'
 echo ''
 
+# Define the directories
+synology_drive="$HOME/SynologyDrive"
+nas_mount="/Volumes/home"
+
+# Initialize the variable
+default_path=""
+
+# Check if the directories exist
+if [ -d "$synology_drive" ]; then
+    default_path="$synology_drive"
+elif [ -d "$nas_mount" ]; then
+    default_path="$nas_mount"
+fi
+
+# Print the path of the first existing directory
+echo $default_path
+
 # @todo: Ask for SynologyDrive or NAS Mount
-echo "What is the Path to the Network Folder (SynologyDrive or Direct NAS Mount)?"
+echo "What is the Path to the Network Folder? (default: $default_path)"
 read nas_folder
-nas_folder=${nas_folder:-"$HOME/SynologyDrive"}
+nas_folder=${nas_folder:-"$default_path"}
 export NAS_FOLDER=$nas_folder
 
 # @todo:# figure out the best way to check if the necessary folders are up
