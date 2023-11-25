@@ -37,5 +37,6 @@ alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && k
 
 alias pstorm='open -na "PhpStorm.app" --args "$@"'
 
-alias curl-impersonate-chrome='docker run --rm lwthiker/curl-impersonate:0.5-chrome chrome101 "$@"'
-alias curl-impersonate-firefox='docker run --rm lwthiker/curl-impersonate:0.5-ff curl_ff102 "$@"'
+alias curl-impersonate='docker run --rm lwthiker/curl-impersonate:0.5-chrome chrome101 "$@"'
+alias curl-impersonate-chrome='docker run --rm lwthiker/curl-impersonate:0.5-chrome "$@"'
+alias curl-impersonate-firefox='docker run --rm lwthiker/curl-impersonate:0.5-ff "$@"'
