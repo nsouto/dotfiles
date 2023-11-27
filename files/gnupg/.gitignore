@@ -1,0 +1,6 @@
+crls.d
+private-keys*
+pubring*
+tofu.db
+trustdb.gpg
+random_seed
